@@ -188,3 +188,11 @@ Processing by PostsController#create as HTML
   [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
 Redirected to http://165.227.16.205:48241/posts/4
 Completed 302 Found in 16ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/posts/4" for 73.65.241.186 at 2018-09-20 21:16:55 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 14.3ms | ActiveRecord: 0.2ms)
